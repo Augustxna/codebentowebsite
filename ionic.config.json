@@ -1,0 +1,7 @@
+{
+  "name": "cbentoweb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
