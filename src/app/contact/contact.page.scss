@@ -172,7 +172,7 @@ background-color: rgb(252, 252, 252);
 }
 
 .submit_btn {
-  animation: submitbutton 2.2s ease-out;
+  animation: submitbutton 3s ease-out;
   width:250px;
   cursor: pointer;
   border: 1px solid rgb(239, 239, 239);
@@ -197,14 +197,39 @@ background-color: rgb(252, 252, 252);
     transform: translateY(-1000px);
     opacity: 1;
   }
-  90%{
-    transform: translateY(-1000px);
-    opacity: 1;
-  }
-  90%{
-    transform: translateY(100px);
-    opacity: 1;
-  }
+  85%{
+      transform: translateY(100px);
+      opacity: 1;
+    }
+  92%{
+      transform: translateY(-30px);
+      opacity: 1;
+    }
+  // 75%{
+  //   transform: translateY(-400px);
+  //   transform:rotate(90deg);
+  //   opacity: 1;
+  // }
+  // 80%{
+  //   transform: translateY(-300px);
+  //   transform:rotate(180deg);
+  //   opacity: 1;
+  // }
+  // 85%{
+  //   transform: translateY(-200px);
+  //   transform:rotate(270deg);
+  //   opacity: 1;
+  // }
+  // 90%{
+  //   transform: translateY(-100px);
+  //   transform:rotate (360);
+  //   opacity: 1;
+  // }
+  // 95%{
+  //   transform: translateY(100px);
+  //   transform:rotate (0deg);
+  //   opacity: 1;
+  // }
   100%{
     transform: translateY(0);
     opacity: 1;

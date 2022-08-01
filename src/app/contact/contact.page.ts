@@ -33,9 +33,14 @@ export class ContactPage implements OnInit {
       fillOpacity: 1,
       strokeWeight: 0,
       rotation: 0,
-      scale: 1.5,
+      scale: 3,
       anchor: new google.maps.Point(15, 30),
     };
+
+
+    // const label = {
+    //   fillColor: "white"
+    // }
 
 
     setTimeout(() => {
@@ -50,6 +55,7 @@ export class ContactPage implements OnInit {
       position: { lat: 3.045418667970349, lng: 101.62197141445108 },
       map: map,
       icon: svgMarker,
+      // label: 'V Sing Malaysia'
     });
     }, 1000);
     

@@ -1,10 +1,9 @@
-
 <ion-header>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
 </ion-header>
 
-<!-- <ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)"> -->
-  <ion-content>
+<ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)">
+  <!-- <ion-content> -->
   <div class="body">
     <div>
 
@@ -45,85 +44,107 @@
       </div>
 
 
-       <div id="home" class="home" style="display: flex; flex-direction:column;" (mouseover)="tab = 'home'">
-          <div class="container"
-            [ngStyle]="{'flex-direction': widther() < 960 ? 'column' : 'row' , 'width' : widther() < 960 ? '100%' : '50$'}"
-            style="display: flex; justify-content:space-evenly; align-items:center; padding:60px 20px 0px 20px;">
-            <div style=" font-size: 30px; color: black; padding: 30px 40px 0px 40px; ">
-              <h1 [ngClass]="hometab == 'up' ? 'homeh1' : 'homeh1' " style="font-weight: bold;">Appify your ideas</h1>
-              <p [ngClass]="hometab == 'up' ? 'homep' : 'homep' " style="color: #AAAAAA;">Turn your ideas into mobile apps</p>
-              <button [ngClass]="hometab == 'up' ? 'homebtn' : 'homebtn' ">Let's get started</button>
-            </div>
-
-
-            <div>
-              <img src="../../assets/icon/home_img.png" class="homeimage">
-            </div>
-
+      <div [ngClass]="tab == 'home' ? 'home' : 'blank' " id="home" class="home"
+        style="display: flex; flex-direction:column; height: 185vh; padding-bottom: 50px;" (mouseover)="tab = 'home'">
+        <div class="container"
+          [ngStyle]="{'flex-direction': widther() < 960 ? 'column' : 'row' , 'width' : widther() < 960 ? '100%' : '50$'}"
+          style="display: flex; justify-content:space-evenly; align-items:center; padding:60px 20px 0px 20px;">
+          <div style=" font-size: 30px; color: black; padding: 30px 40px 0px 40px; ">
+            <h1 [ngClass]="hometab == 'up' ? 'homeh1' : 'homeh1' " style="font-weight: bold;">Appify your ideas</h1>
+            <p [ngClass]="hometab == 'up' ? 'homep' : 'homep' " style="color: #AAAAAA;">Turn your ideas into mobile apps
+            </p>
+            <button [ngClass]="hometab == 'up' ? 'homebtn' : 'homebtn' ">Let's get started</button>
           </div>
 
-          <div [ngStyle]="{'padding' : widther() < 960 ? '10px' : '0px 100px'}" style="width: 100%;">
-            <h2 style="font-size: 40px ; text-align: center; padding-bottom: 30px; font-weight: bold;">OUR PARTNERS</h2>
-            <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
-              style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
 
-                <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon" />
-                <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon" />
-                <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon" />
-                <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"  class="icon"/>
-                <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"  class="icon"/>
+          <div>
+            <img src="../../assets/icon/home_img.png" class="homeimage">
+          </div>
+
+        </div>
+
+        <div [ngStyle]="{'padding' : widther() < 960 ? '10px' : '0px 100px'}" style="width: 100%;">
+          <h2 style="font-size: 40px ; text-align: center; padding-bottom: 30px; font-weight: bold;">OUR PARTNERS</h2>
+          <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
+            style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
 
 
           </div>
 
           <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
-          style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
+            style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
 
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon2"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon2"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon2"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon2"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon2"/>
-
-
-      </div>
-
-      <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
-          style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
-
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon"/>
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
 
 
-      </div>
-
-      <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
-          style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
-
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon2"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon2"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon2"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon2"/>
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;" class="icon2"/>
-
-
-      </div>
           </div>
 
+          <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
+            style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
 
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+
+
+          </div>
+
+          <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
+            style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
+              class="icon" />
+
+
+          </div>
         </div>
+
+
+      </div>
 
     </div>
     <!-- <div class="horizontalline"></div> -->
 
-    <div id="about" class="container" style="display: flex; flex-direction: column; padding: 100px 0px 60px 0px;"
-      (mouseover)="tab = 'about'">
+    <div [ngClass]="tab == 'about' ? 'about' : 'blank' " id="about" class="about container"
+      style="display: flex; flex-direction: column; padding: 100px 0px 60px 0px; height: 150vh; position: relative;">
 
       <div [ngStyle]="{'flex-direction': widther() < 960 ? 'column' : 'row'}"
-        style="display: flex; justify-content: space-around; align-items: center; color: black; padding: 60px 20px 140px 20px;">
+        style="display: flex; justify-content: space-around; align-items: center; color: black; padding: 10px 20px 140px 20px;">
         <div style="width: 50%; text-align: center;">
           <h2 style="font-size: 40px; font-weight: bold;">What is Code Bento & What we do</h2>
         </div>
@@ -133,7 +154,8 @@
           style="border: 1px solid black; height:200px;width: 0; background-color: black;  margin: 0px 10px;"></div>
         <div [ngStyle]="{'width': widther() < 960 ? '100%' : '50%'}" style=" text-align: center; padding: 10px 0px;">
           <h2 style="font-size: 40px; font-weight: bold;">- MEET THE TEAM -</h2>
-          <p style="font-size: 20px; color: #737373;;">With years of experience servicing government and private clients,
+          <p style="font-size: 20px; color: #737373; padding: 10px 20px;">With years of experience servicing government
+            and private clients,
             across a multitude of industries including entertainment,
             retail, sports, and real estate. With our locally grown team of 10,
             We are confident we are able to handle your project with utmost professionalism and competency.</p>
@@ -141,16 +163,74 @@
 
       </div>
 
-      <div class="teamimagecontainer" style="display:flex; text-align: center;">
 
-        <!-- <div class="teamimagecontainer square" > -->
+      <ion-slides pager="true" [options]="{'autoplay': true, 'slidesPerView': 3, 'loop': true, 'centeredSlides': true}"
+        style="height: 75vh0; padding-bottom: 50px;">
+        <ion-slide style="display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+          <div>
+            <img src="../../assets/icon/joe.jpg" style="width:33vw; height: 33vw; object-fit: cover;" />
+          </div>
+          <div>Owen Lai</div>
+        </ion-slide>
+        <ion-slide style="display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+          <div>
+            <img src="../../assets/icon/joe.jpg" style="width:33vw; height: 33vw; object-fit: cover;" />
+          </div>
+          <div>Owen Lai</div>
+        </ion-slide>
+        <ion-slide style="display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+          <div>
+            <img src="../../assets/icon/joe.jpg" style="width:33vw; height: 33vw; object-fit: cover;" />
+          </div>
+          <div>Owen Lai</div>
+        </ion-slide>
+        <ion-slide style="display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+          <div>
+            <img src="../../assets/icon/joe.jpg" style="width:33vw; height: 33vw; object-fit: cover;" />
+          </div>
+          <div>Owen Lai</div>
+        </ion-slide>
+        <ion-slide style="display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+          <div>
+            <img src="../../assets/icon/joe.jpg" style="width:33vw; height: 33vw; object-fit: cover;" />
+          </div>
+          <div>Owen Lai</div>
+        </ion-slide>
+        <ion-slide style="display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+          <div>
+            <img src="../../assets/icon/joe.jpg" style="width:33vw; height: 33vw; object-fit: cover;" />
+          </div>
+          <div>Owen Lai</div>
+        </ion-slide>
+        <ion-slide style="display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+          <div>
+            <img src="../../assets/icon/joe.jpg" style="width:33vw; height: 33vw; object-fit: cover;" />
+          </div>
+          <div>Owen Lai</div>
+        </ion-slide>
+        <ion-slide style="display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+          <div>
+            <img src="../../assets/icon/joe.jpg" style="width:33vw; height: 33vw; object-fit: cover;" />
+          </div>
+          <div>Owen Lai</div>
+        </ion-slide>
+      </ion-slides>
 
-          <img src="../../assets/icon/joe.jpg" style="width:33vw"/>
-          <img src="../../assets/icon/joe.jpg" style="width:33vw"/>
-          <img src="../../assets/icon/joe.jpg" style="width:33vw"/>
+
+      <!-- <div class="teamimagecontainer square" > -->
+
+      <!-- <div class="teamimagecontainer square" > -->
 
 
-        <!-- <img src="../../assets/icon/joe.jpg" [ngStyle]="{'width': widther() < 960 ? '100%' : 'calc(100% /3)'}" />
+      <!-- <img src="../../assets/icon/joe.jpg" style="width:33vw" />
+        <img src="../../assets/icon/joe.jpg" style="width:33vw" />
+        <img src="../../assets/icon/joe.jpg" style="width:33vw" />
+        <img src="../../assets/icon/joe.jpg" style="width:33vw" />
+        <img src="../../assets/icon/joe.jpg" style="width:33vw" />
+        <img src="../../assets/icon/joe.jpg" style="width:33vw" /> -->
+
+
+      <!-- <img src="../../assets/icon/joe.jpg" [ngStyle]="{'width': widther() < 960 ? '100%' : 'calc(100% /3)'}" />
         <img src="../../assets/icon/joe.jpg" [ngStyle]="{'width': widther() < 960 ? '100%' : 'calc(100% /3)'}" />
         <img src="../../assets/icon/joe.jpg" [ngStyle]="{'width': widther() < 960 ? '100%' : 'calc(100% /3)'}" />
 
@@ -161,23 +241,27 @@
         <img src="../../assets/icon/joe.jpg" [ngStyle]="{'width': widther() < 960 ? '100%' : 'calc(100% /3)'}" />
         <img src="../../assets/icon/joe.jpg" [ngStyle]="{'width': widther() < 960 ? '100%' : 'calc(100% /3)'}" />
         <img src="../../assets/icon/joe.jpg" [ngStyle]="{'width': widther() < 960 ? '100%' : 'calc(100% /3)'}" /> -->
-        
 
-      </div>
+
+      <!-- </div> -->
 
 
     </div>
 
     <!-- <div class="horizontalline"></div> -->
 
-    <div >
-    <div id="services" class="container" style="padding: 40px 20px;">
+
+    <div [ngClass]="tab == 'services' ? 'services' : 'blank' " id="services" class="services container"
+      style="padding: 40px 20px; height: 100vh;">
 
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-        <div [ngStyle]="{'width': widther() < 960 ? '100%' : '50%'}" style="text-align: center; padding: 60px 0px 120px 0px;">
+        <div [ngStyle]="{'width': widther() < 960 ? '100%' : '50%'}"
+          style="text-align: center; padding: 60px 0px 120px 0px;">
           <h1 style="font-size:40px ; font-weight: bold;">- WHY US ? -</h1>
-          <p style="color: rgb(115, 115, 115); font-size:20px; padding:0px 30px">We set high standards for ourselves in terms of build quality and speed. 
-            Your project is in good hands as we pull out all the stops to making the best app possible within your budget
+          <p style="color: rgb(115, 115, 115); font-size:20px; padding:0px 30px">We set high standards for ourselves in
+            terms of build quality and speed.
+            Your project is in good hands as we pull out all the stops to making the best app possible within your
+            budget
           </p>
         </div>
 
@@ -185,10 +269,11 @@
           style="display: flex; justify-content: space-around; width: 100%; text-align: center;">
 
           <div [ngStyle]="{'width': widther() < 960 ? '100%' : '30%'}">
-            <img src="../../assets/icon/service1.png"
-              style="border-radius:50%; width: 250px; margin:10px;" [ngClass]="navbartab == 'down' ? 'image' : 'image2' "/>
+            <img src="../../assets/icon/service1.png" style="border-radius:50%; width: 250px; margin:10px;"
+              [ngClass]="navbartab == 'down' ? 'image' : 'image2' " />
             <h2 style="padding:10px">Mobile App Development</h2>
-            <p style="color: #aaaaaa;">Transforming your ideas into beautiful custom built mobile apps. We specialize in building efficient apps
+            <p style="color: #aaaaaa;">Transforming your ideas into beautiful custom built mobile apps. We specialize in
+              building efficient apps
               from scratch</p>
           </div>
 
@@ -196,28 +281,31 @@
             <img src="../../assets/icon/service2.png"
               style="border-radius:50%;  width: 250px; margin:10px; height:250px;" class="image" />
             <h2 style="padding:10px">Dynamic & Stylish Design</h2>
-            <p style="color: #aaaaaa;">A clean and simple UI/UX is the key to an aesthetic app. Watch as your app is given a modern and
+            <p style="color: #aaaaaa;">A clean and simple UI/UX is the key to an aesthetic app. Watch as your app is
+              given a modern and
               functional look</p>
           </div>
 
           <div [ngStyle]="{'width': widther() < 960 ? '100%' : '30%'}">
             <img src="../../assets/icon/service3.png"
-              style="border-radius:50%;  width: 250px; margin:10px; height:250px;" class="image"/>
+              style="border-radius:50%;  width: 250px; margin:10px; height:250px;" class="image" />
             <h2 style="padding:10px">Secure & Fast Platform</h2>
-            <p style="color: #aaaaaa;">Experience near zero interruptions and lightning quick computations through the power of Cloud Servers
+            <p style="color: #aaaaaa;">Experience near zero interruptions and lightning quick computations through the
+              power of Cloud Servers
             </p>
           </div>
 
         </div>
       </div>
     </div>
-  </div>
+
 
     <!-- <div class="horizontalline"></div> -->
 
     <!-- <div id="team" class="container"> Team </div>
     <div class="horizontalline"></div> -->
-    <div id="work" class="container" style="padding: 40px 20px;">
+    <div [ngClass]="tab == 'work' ? 'work' : 'blank' " id="work" class="work container"
+      style="padding: 40px 20px; height: 100vh;">
       <div style="padding-bottom: 40px; padding:60px 0px 120px 0px; display: flex; justify-content: center;">
         <h2 style="font-size: 40px; font-weight: bold;">OUR CREATIONS</h2>
       </div>

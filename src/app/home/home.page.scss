@@ -10,6 +10,10 @@
   overflow: hidden;
 }
 
+.blank{
+  background-color: black;
+}
+
 
 
 .navbar{
@@ -22,7 +26,8 @@
   width:100%; 
   z-index:30;
   transition: top 1s; 
-  background-color:rgb(252, 252, 252); ;
+  background-color:rgba(252, 252, 252, 0.8);
+  backdrop-filter: blur(20px);
 }
 
 
@@ -123,7 +128,7 @@
   cursor: pointer;
 }
 
-.homeh1{
+.home .homeh1{
   font-size: 50px;
   animation: hometitle 1.5s linear;
 }
@@ -145,7 +150,7 @@
   }
 }
 
-.homep{
+.home .homep{
   animation: hometext 1.7s linear;
 }
 
@@ -166,7 +171,7 @@
   }
 }
 
-.homebtn{
+.home .homebtn{
   animation: homebtn 2s linear;
 }
 
@@ -210,18 +215,17 @@
 }
 
 .home .icon:hover{
-  transform: scale(1.2);
-  transition: 0.3s ease-in;
-  animation-direction: alternate;
+  transform: scale(1.5);
+  transition: 0.5s ease-in;
   cursor: pointer;
 }
 
-.home .icon2:hover{
-  transform: scale(1.2);
-  transition: 0.3s ease-in;
-  animation-direction: alternate;
-  cursor: pointer;
-}
+// .home .icon2:hover{
+//   transform: scale(1.2);
+//   transition: 0.3s ease-in;
+//   animation-direction: alternate;
+//   cursor: pointer;
+// }
 
 .home .icon:nth-child(1){
   animation: icons 1.5s ease-in;
@@ -282,7 +286,7 @@
 }
 
 
-.image{
+.services .image{
   animation: serviceimage 2s ease-in;
 }
 
@@ -336,6 +340,21 @@
   }
 }
 
+.teamimagecontainer{
+  display:flex;
+  flex-direction: row; 
+  overflow-x: auto;
+  // height: 100vw;
+  // transform: rotate(-90deg) translateY(33vw) translateX(30vw);
+  // overflow-y: scroll;
+  // overflow-x: hidden;
+}
+
+.teamimagecontainer >img{
+  // transform: rotate(90deg);
+  flex: none;
+}
+
 // .teamimagecontainer::-webkit-scrollbar {
 //   display: none;
 // }
@@ -368,3 +387,11 @@
 // .square>img:last-child {
 //   margin-bottom: calc(-62vh);
 // }
+.swiper-slide{
+  transition: 400ms all ease-in-out;
+}
+
+.swiper-slide-active{
+  transform: scale(1.05, 1.05);
+  z-index: 99;
+}

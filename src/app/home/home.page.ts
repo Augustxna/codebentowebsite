@@ -14,6 +14,8 @@ export class HomePage {
   navbartab = 'up';
   hometab = 'up';
 
+  reach = 1
+
   constructor(private nav: NavController, private platform: Platform) {
 
     //   var prevScrollpos = window.pageYOffset;
@@ -27,8 +29,6 @@ export class HomePage {
     //   prevScrollpos = currentScrollPos;
     // }
   }
-
-  ngAfterViewInit() {}
 
   ngOnInit() {
     // window.onscroll = this.detectScroll;
@@ -67,35 +67,35 @@ export class HomePage {
   scrollToHome() {
     document.getElementById('home').scrollIntoView({
       behavior: 'smooth',
-      block: 'center',
+      block: 'start',
       inline: 'nearest'
     });
   }
   scrollToService() {
     document.getElementById('services').scrollIntoView({
       behavior: 'smooth',
-      block: 'center',
+      block: 'start',
       inline: 'nearest'
     });
   }
   scrollToAbout() {
     document.getElementById('about').scrollIntoView({
       behavior: 'smooth',
-      block: 'center',
+      block: 'start',
       inline: 'nearest'
     });
   }
   scrollToTeam() {
     document.getElementById('team').scrollIntoView({
       behavior: 'smooth',
-      block: 'center',
+      block: 'start',
       inline: 'nearest'
     });
   }
   scrollToWork() {
     document.getElementById('work').scrollIntoView({
       behavior: 'smooth',
-      block: 'center',
+      block: 'start',
       inline: 'nearest'
     });
   }
@@ -104,20 +104,66 @@ export class HomePage {
     return this.platform.width();
   }
 
-  // onScroll(event) {
-  //   if (event.detail.deltaY > 0) {
-  //     console.log('scrolling down...');
-  //     this.navbartab = 'down';
-  //     this.hometab = 'down';
+  onScroll(event) {
 
-  //   } else if (event.detail.deltaY < 0) {
-  //     console.log('scrolling up...');
-  //     this.navbartab = 'up';
-  //     this.hometab = 'up';
-  //   }
+    let scrollPoint = event.detail.scrollTop
+    let first: any = document.getElementById('home').offsetHeight - this.platform.height() * 0.05
 
-  //   event.detail.deltaY = event.detail.deltaY
-  // }
+    if(scrollPoint == 0 && scrollPoint <= first ){
+      this.reach = 1
+      this.tab='home'
+      console.log(this.reach);
+      
+    } else if (scrollPoint >= first && scrollPoint <= first /3 * 5.2) {
+      this.reach =2
+      this.tab='about'
+      console.log(this.reach);
+      
+    } else if (scrollPoint >= first /3 * 5.2 && scrollPoint <= first /3 * 6.73) {
+      this.reach =3
+      this.tab = 'services'
+      console.log(this.reach);
+      
+    }else if (scrollPoint >= first /3 * 6.73  && scrollPoint <= first /3 * 8.46) {
+      this.reach =4
+      this.tab = 'work'
+      console.log(this.reach);
+      
+    }
+
+
+
+    // if (event.detail.deltaY > 0) {
+    //   console.log('scrolling down...');
+    //   // this.navbartab = 'down';
+    //   // this.hometab = 'down';
+
+    // }  else if (event.detail.deltaY < 0) {
+    //   console.log('scrolling up...');
+    //   // this.navbartab = 'up';
+    //   // this.hometab = 'up';
+
+    // }
+    
+    
+    
+    // if(event.detail.deltaY > 0 && event.detail.deltaY < 150){
+    //   this.tab = 'home'
+    //   console.log("home")
+    // } else if(event.detail.deltaY > 150 && event.detail.deltaY < 270){
+    //   this.tab = 'about'
+    //   console.log("about")
+    // } else if(event.detail.deltaY > 270 && event.detail.deltaY < 350){
+    //   this.tab = 'services'
+    //   console.log("services")
+    // } else if(event.detail.deltaY > 350){
+    //   this.tab = 'work'
+    //   console.log("work")
+    // }
+
+    // event.detail.deltaY += event.detail.deltaY
+
+  }
 
 
   // onScroll(event) {
