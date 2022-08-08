@@ -25,7 +25,7 @@
 .title_container {
   cursor: pointer;
   text-decoration: none;
-  padding:50px 0px 0px 0px;
+  padding:35px 0px 0px 0px;
 }
 
 .title{
@@ -44,7 +44,7 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding: 40px 0px 80px 0px;
+  padding: 20px 0px 80px 0px;
 }
 
 .map {
@@ -79,7 +79,7 @@ background-color: rgb(252, 252, 252);
 }
 
 .outform{
-  width: 30%;
+  width: 28%;
   display: flex;
   border-radius: 10px;
   margin: 0px 0px 0px 30px;
@@ -91,7 +91,7 @@ background-color: rgb(252, 252, 252);
   color: black;
   height: 100%;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 12.6px;
 }
 
 .input-box {
@@ -173,11 +173,11 @@ background-color: rgb(252, 252, 252);
 
 .submit_btn {
   animation: submitbutton 3s ease-out;
-  width:250px;
+  width:225px;
   cursor: pointer;
   border: 1px solid rgb(239, 239, 239);
   border-radius: 7px;
-  padding: 15px 10px;
+  padding: 12px 10px;
   text-align: center;
   background-color: wheat;
   font-weight: 1000;
@@ -246,7 +246,7 @@ background-color: rgb(252, 252, 252);
 
 .infor_container {
   border-radius: 10px 10px 0px 0px;
-  padding:10px 40px 30px 0px;
+  padding:10px 0px 30px 0px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -256,7 +256,7 @@ background-color: rgb(252, 252, 252);
 .infor {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin-left: 0px;
 }
 
@@ -284,7 +284,7 @@ background-color: rgb(252, 252, 252);
 .socialmedia{
   display: flex; 
   justify-content: flex-end; 
-  font-size: 50px; 
+  font-size: 40px; 
   padding: 10px 0px;
   margin-right: 100px;
 }
@@ -301,7 +301,7 @@ background-color: rgb(252, 252, 252);
   justify-content: center;
   align-items: center;
   bottom: 0;
-  font-size: 14px;
+  font-size: 13px;
 
 }
 
@@ -314,49 +314,49 @@ background-color: rgb(252, 252, 252);
 
 .underlinedcontacthome {
   background-color: white;
-  height: 18px;
+  height: 14px;
   left: 20px;
-  width: 210px;
+  width: 170px;
   animation: contacthome 0.5s ;
 }
 
 .underlinedcontactservices {
   background-color: white;
-  height: 18px;
+  height: 14px;
   left: 20px;
-  width: 300px;
+  width: 250px;
   animation: contactservices 0.5s ;
 }
 
 .underlinedcontactabout {
   background-color: white;
-  height: 18px;
+  height: 14px;
   left: 20px;
-    width: 220px;
+    width: 180px;
   animation: contactabout 0.5s ;
 }
 
 .underlinedcontactteam {
   background-color: white;
-  height: 18px;
+  height: 14px;
   left: 20px;
-    width: 200px;
+    width: 160px;
   animation: contactteam 0.5s ;
 }
 
 .underlinedcontactwork {
   background-color: white;
-  height: 18px;
+  height: 14px;
   left: 20px;
-    width: 200px;
+    width: 160px;
   animation: contactwork 0.5s ;
 }
 
 .underlinedcontactcontact {
   background-color: white;
-  height: 18px;
+  height: 14px;
   left: 20px;
-    width: 280px;
+    width: 240px;
   animation: contactcontact 0.5s ;
 }
 
@@ -368,7 +368,7 @@ background-color: rgb(252, 252, 252);
 
   to {
     left: 20px;
-    width: 210px;
+    width: 170px;
   }
 }
 
@@ -380,7 +380,7 @@ background-color: rgb(252, 252, 252);
 
   to {
     left: 20px;
-    width: 300px;
+    width: 250px;
   }
 }
 
@@ -392,7 +392,7 @@ background-color: rgb(252, 252, 252);
 
   to {
     left: 20px;
-    width: 220px;
+    width: 180px;
   }
 }
 
@@ -404,7 +404,7 @@ background-color: rgb(252, 252, 252);
 
   to {
     left: 20px;
-    width: 200px;
+    width: 160px;
   }
 }
 
@@ -416,7 +416,7 @@ background-color: rgb(252, 252, 252);
 
   to {
     left: 20px;
-    width: 200px;
+    width: 160px;
   }
 }
 
@@ -428,7 +428,7 @@ background-color: rgb(252, 252, 252);
 
   to {
     left: 20px;
-    width: 280px;
+    width: 240px;
   }
 }
 
@@ -488,6 +488,68 @@ background-color: rgb(252, 252, 252);
   width:5%
 }
 
+.navtitle1{
+
+  animation: navtitle 1s ease-in-out;
+
+}
+.navtitle2{
+
+  animation: navtitle 1.2s ease-in-out;
+
+}
+
+.navtitle3{
+
+  animation: navtitle 1.4s ease-in-out;
+
+}
+
+.navtitle4{
+
+  animation: navtitle 1.6s ease-in-out;
+
+}
+
+.navtitle5{
+
+  animation: navtitle 1.8s ease-in-out;
+
+}
+
+.navtitle6{
+
+  animation: navtitle 2s ease-in-out;
+
+}
+
+
+@keyframes navtitle{
+  0%{
+    transform: translateX(-50%);
+   opacity: 0;
+  }
+  50%{
+   opacity: 1;
+  }
+  70%{
+   opacity: 1;
+  }
+  100%{
+    transform: translateX(0%);
+   opacity: 1;
+  }
+}
+
+.title0{
+  color: #aaaaaa;
+  transform: scale(20px);
+}
+
+.navtitle0{
+  cursor: pointer;
+  color: white;
+}
 
 
 //below 960px
@@ -624,7 +686,7 @@ background-color: rgb(252, 252, 252);
   }
 
   .logo {
-    height: 130px;
+    height: 117px;
   }
 
   .infor_box {
@@ -635,7 +697,8 @@ background-color: rgb(252, 252, 252);
     padding-bottom: 10px;
     padding-right: 10px;
     font-size: 25px;
-    min-width: 25px;
+    width: 25px;
+    height: 25px;
   }
 
   .socialmedia{

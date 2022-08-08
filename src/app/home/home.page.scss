@@ -128,21 +128,37 @@
   cursor: pointer;
 }
 
-.home .homeh1{
-  font-size: 50px;
-  animation: hometitle 1.5s linear;
+.homeh2{
+  opacity: 0;
+
 }
 
+.homep2{
+  opacity: 0;
+}
+
+.homebtn2{
+  opacity: 0;
+}
+.homeimage2{
+  opacity: 0;
+}
+
+
+.home .homeh1{
+  font-size: 40px;
+  animation: hometitle 0.5s linear;
+}
 @keyframes hometitle{
   0%{
-    transform: translateX(20vw);
+    transform: translateX(100vw);
     opacity: 0;
   }
   50%{
-    opacity: 1;
+    opacity: 0;
   }
   70%{
-    opacity: 1;
+    opacity: 0;
   }
   100%{
     transform: translateX(0);
@@ -150,20 +166,48 @@
   }
 }
 
-.home .homep{
-  animation: hometext 1.7s linear;
+.home .homepa{
+  animation: hometext 0.6s linear;
+}
+
+.home .homepb{
+  animation: hometext 0.7s linear;
+}
+
+.home .homepc{
+  animation: hometext 0.8s linear;
 }
 
 @keyframes hometext{
   0%{
-    transform: translateX(20vw);
+    transform: translateX(100vw);
     opacity: 0;
   }
   50%{
-    opacity: 1;
+    opacity: 0;
   }
   70%{
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes hometextlong{
+  0%{
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 0;
+  }
+  85%{
+    opacity: 0;
   }
   100%{
     transform: translateX(0);
@@ -172,7 +216,7 @@
 }
 
 .home .homebtn{
-  animation: homebtn 2s linear;
+  animation: homebtn 0.3s linear;
 }
 
 @keyframes homebtn{
@@ -194,7 +238,7 @@
 
 
 .home .homeimage{
-  animation: homeimg 1.7s linear;
+  animation: homeimg 0.3s linear;
 }
 
 @keyframes homeimg{
@@ -214,9 +258,13 @@
   }
 }
 
+.home .icon2{
+  opacity: 0;
+}
+
 .home .icon:hover{
-  transform: scale(1.5);
-  transition: 0.5s ease-in;
+  transform: translate(10px, 10px);
+  transition: 0.5s ease-in ;
   cursor: pointer;
 }
 
@@ -227,8 +275,8 @@
 //   cursor: pointer;
 // }
 
-.home .icon:nth-child(1){
-  animation: icons 1.5s ease-in;
+.home .icon{
+  animation: icons 0.3s ease-in;
 }
 
 @keyframes icons{
@@ -241,7 +289,6 @@
     opacity: 1;
   }
   70%{
-    transform: scale(1.25);
     opacity: 1;
   }
   100%{
@@ -251,43 +298,43 @@
   }
 }
 
-.home .icon:nth-child(2){
-  animation: icons 1.5s ease-in;
-}
-
-.home .icon:nth-child(3){
-  animation: icons 1.5s ease-in;
-}
-
-.home .icon:nth-child(4){
-  animation: icons 1.5s ease-in;
-}
-
-.home .icon:nth-child(5){
-  animation: icons 1.5s ease-in;
-}
-
-.home .icon2:nth-child(1){
-  animation: icons 2.0s ease-in;
-}
-
-.home .icon2:nth-child(2){
-  animation: icons 2.0s ease-in;
-}
-
-.home .icon2:nth-child(3){
-  animation: icons 2.0s ease-in;
-}
-.home .icon2:nth-child(4){
-  animation: icons 2.0s ease-in;
-}
-.home .icon2:nth-child(5){
-  animation: icons 2.0s ease-in;
+.titlex{
+  opacity: 0;
 }
 
 
-.services .image{
-  animation: serviceimage 2s ease-in;
+.titleanimation{
+  animation: titleanime 0.3s ease-in;
+}
+
+@keyframes titleanime{
+  0%{
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  50%{
+
+    opacity: 1;
+  }
+  70%{
+
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0);
+    opacity:1;
+  }
+}
+
+
+.services .imagea{
+  animation: serviceimage 0.6s ease-in;
+}
+.services .imageb{
+  animation: serviceimage 0.7s ease-in;
+}
+.services .imagec{
+  animation: serviceimage 0.8s ease-in;
 }
 
 @keyframes serviceimage{
@@ -299,6 +346,7 @@
     opacity: 1;
   }
   70%{
+    transform: scale(1.2);
     opacity: 1;
   }
   100%{
@@ -307,7 +355,9 @@
   }
 }
 
-.image2{
+.services .image2{
+
+  opacity: 0;
 
 }
 
@@ -394,4 +444,286 @@
 .swiper-slide-active{
   transform: scale(1.05, 1.05);
   z-index: 99;
+}
+
+//contact
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit";
+}
+
+.content_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+
+.title_container {
+  cursor: pointer;
+  text-decoration: none;
+  padding:35px 0px 0px 0px;
+}
+
+.title{
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.subtitle{
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.formnmap {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 20px 0px 80px 0px;
+}
+
+.map {
+animation: mapanimation 1s ease-in;
+background-color: rgb(252, 252, 252);
+}
+
+@keyframes mapanimation{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  50%{
+
+    opacity: 1;
+  }
+  70%{
+
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.075);
+    opacity: 1;
+  }
+}
+
+.imagenform{
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
+
+.outform{
+  width: 28%;
+  display: flex;
+  border-radius: 10px;
+  margin: 0px 0px 0px 30px;
+  justify-content: space-between;
+}
+
+.form {
+  width: 100%;
+  color: black;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 12.6px;
+}
+
+.input-box {
+  animation: inputboxanimation 1s ease-in;
+  margin: 10px 0px;
+  background-color:  #fcfcfc;
+  border-radius: 10px;
+  padding: 10px;
+  --padding-start: 10px;
+  width: 100%;
+}
+
+.input-box2 {
+  animation: inputboxanimation 1.2s ease-in;
+  margin: 10px 0px;
+  background-color:  #fcfcfc;
+  border-radius: 10px;
+  padding: 10px;
+  --padding-start: 10px;
+  width: 100%;
+}
+
+.input-box3 {
+  animation: inputboxanimation 1.4s ease-in;
+  margin: 10px 0px;
+  background-color:  #fcfcfc;
+  border-radius: 10px;
+  padding: 10px;
+  --padding-start: 10px;
+  width: 100%;
+}
+
+.input-box4 {
+  animation: inputboxanimation 1.6s ease-in;
+  margin: 10px 0px;
+  background-color:  #fcfcfc;
+  border-radius: 10px;
+  padding: 10px;
+  --padding-start: 10px;
+  width: 100%;
+}
+
+
+
+
+@keyframes inputboxanimation{
+  0%{
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.textareabox{
+  animation: inputboxanimation 1.8s ease-in;
+  background-color:  #fcfcfc;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #fcfcfc;
+  width: 100%;
+  outline: none;
+  resize: none;
+}
+
+.submit_btn_box{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit_btn {
+  animation: submitbutton 3s ease-out;
+  width:225px;
+  cursor: pointer;
+  border: 1px solid rgb(239, 239, 239);
+  border-radius: 7px;
+  padding: 12px 10px;
+  text-align: center;
+  background-color: wheat;
+  font-weight: 1000;
+  color:white;
+}
+
+@keyframes submitbutton{
+  0%{
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(-1000px);
+    opacity: 1;
+  }
+  70%{
+    transform: translateY(-1000px);
+    opacity: 1;
+  }
+  85%{
+      transform: translateY(100px);
+      opacity: 1;
+    }
+  92%{
+      transform: translateY(-30px);
+      opacity: 1;
+    }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.submit_btn:hover{
+  background-color: rgb(195, 132, 16);
+  color: white;
+}
+
+.footer_container {
+}
+
+.infor_container {
+  border-radius: 10px 10px 0px 0px;
+  padding:10px 0px 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+}
+
+.infor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 0px;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 200px;
+  padding-top: 10px;
+  object-fit: cover;
+}
+
+.infor_box {
+  display: flex;
+}
+
+.infor_icon {
+  padding-bottom: 10px;
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+.socialmedia{
+  display: flex; 
+  justify-content: flex-end; 
+  font-size: 40px; 
+  padding: 10px 0px;
+  margin-right: 100px;
+}
+
+.copyright_box {
+
+  background: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  padding: 5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  font-size: 13px;
+
+}
+
+.blankx{
+opacity: 0;
 }

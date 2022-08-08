@@ -1,6 +1,6 @@
 <ion-header>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </ion-header>
 
 
@@ -31,8 +31,8 @@
 
                 <div class="imagenform">
 
-                    <div *ngIf="widther() > 960" style="display: flex; justify-content:center; width: 70%;">
-                        <div style="width: 100% ; height: 600px; border-radius: 15px;" id="map" class="map">
+                    <div *ngIf="widther() > 960" style="display: flex; justify-content:center; width: 60%;">
+                        <div style="width: 100% ; height: 520px; border-radius: 15px;" id="map" class="map">
                         </div>
                     </div>
 
@@ -43,8 +43,8 @@
                         <div class="form">
                             <div style="text-align: center; padding: 20px 0px;">
 
-                                <h2 style="padding: 5px 0px;">We would love to hear from you. </h2>
-                                <p>Let us meet and you may judge for yourself if we are worth your time and money</p>
+                                <h2 style="padding: 5px 0px; font-size: 22px;">We would love to hear from you. </h2>
+                                <p style="font-size: 13px ;">Let us meet and you may judge for yourself if we are worth your time and money</p>
                             </div>
 
                             <div class="input">
@@ -82,18 +82,21 @@
 
 
 
-                <div class="infor_container">
+                <div style="display: flex; flex-direction:column; justify-content: center; align-items: center; padding-bottom: 60px;">
 
-                    <div class="logo_container" style="width: 20%; display: flex; align-items: center;">
+                    <div class="logo_container" style="width: 100%; display: flex; align-items: center; padding-bottom: 60px;">
                         <img src="../../assets/icon/codebentologo.png" class="logo">
                     </div>
+                    
+                    <div class="infor_container">
+
+                    <div style="width: 13%;"></div>
+
+                    <div class="infor" style="width: 25%;">
 
 
-
-                    <div class="infor" style="width: 32%;">
-
-
-                        <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;" >CodeBento Sdn Bhd
+                        <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">CodeBento
+                            Sdn Bhd
                         </div>
 
 
@@ -101,7 +104,8 @@
                             <!-- <ion-icon name="map-outline" class="infor_icon"></ion-icon> -->
                             <img src="../../assets/contact_img/location-outline2.png"
                                 style="width: 26px; height: 26px; margin-right: 10px; " />
-                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">F-3A-16, IOI Boulevard, Jalan Kenari 5, Bandar Puchong Jaya, 47100 Puchong, Selangor
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">F-3A-16, IOI Boulevard, Jalan
+                                Kenari 5, Bandar Puchong Jaya, 47100 Puchong, Selangor
                                 Malaysia.</div>
                         </div>
 
@@ -112,83 +116,92 @@
 
                         <div class="infor_box" style="padding-bottom:5px;">
                             <ion-icon name="phone-portrait-outline" class="infor_icon" style="color: black;"></ion-icon>
-                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">0123456789</div>
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">+60123456789</div>
                         </div>
 
                         <div class="infor_box" style="padding-bottom:5px;">
-                            <img src="../../assets/contact_img/facebook-outline2.svg" class="infor_icon" style="width: 36px; height:36px"/>
-                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">https://www.facebook.com/codebento/</div>
+                            <ion-icon name="time-outline" class="infor_icon" style="color: black;"></ion-icon>
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Working hours: Mon - Fri  10:30 - 19:30h</div>
+                        </div>
+
+                        <!-- <div class="infor_box" style="padding-bottom:5px;">
+                            <img src="../../assets/contact_img/facebook-outline2.svg" class="infor_icon"
+                                style="width: 36px; height:36px" />
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">
+                                https://www.facebook.com/codebento/</div>
                         </div>
 
                         <div class="infor_box" style="padding-bottom:5px;">
-                            <ion-icon name="logo-instagram" class="infor_icon" style="color: black;"></ion-icon>
-                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">https://www.instagram.com/codebentomy/</div>
+                            <ion-icon name="logo-instagram" class="infor_icon" style="color: black; font-size: 30px;"></ion-icon>
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px; word-break: break-all;">
+                                https://www.instagram.com/codebentomy/</div>
                         </div>
 
                         <div class="infor_box" style="padding-bottom:5px;">
                             <ion-icon name="logo-whatsapp" class="infor_icon" style="color: black;"></ion-icon>
                             <div style="color: rgb(153, 153, 153) ; font-size: 14px;">0123456789</div>
+                        </div> -->
+                    </div>
+
+                    <div style="width:5%;"></div>
+
+                    <div class="infor" style="width: 30%;">
+                    
+                        <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">Social Media
                         </div>
 
-
-                        <!-- <div class="infor_box">
-                            <img src="../../assets/contact_img/icons8-secured-letter-100.png"
-                                style="width: 25px; height: 25px; margin-right: 10px; " />
-                            <div>Emai@gmail.com</div>
+                        <div class="infor_box" style="padding-bottom:5px;">
+                            <img src="../../assets/contact_img/facebook-outline2.svg" class="infor_icon"
+                                style="width: 36px; height:36px" />
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">
+                                https://www.facebook.com/codebento/</div>
                         </div>
 
-                        <div class="infor_box">
-                            <img src="../../assets/contact_img/icons8-phonelink-ring-100.png"  
-                            style="width: 25px; height: 25px; margin-right: 10px; " >
-                            <div>0123456789</div>
+                        <div class="infor_box" style="padding-bottom:5px;">
+                            <ion-icon name="logo-instagram" class="infor_icon" style="color: black; "></ion-icon>
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px; word-break: break-all;">
+                                https://www.instagram.com/codebentomy/</div>
                         </div>
 
-                        <div class="infor_box">
-                            <img src="../../assets/contact_img/icons8-facebook-500.png"
-                            style="width: 25px; height: 25px; margin-right: 10px; " />
-                            <div>https://www.facebook.com/codebento/</div>
+                        <div class="infor_box" style="padding-bottom:5px;">
+                            <ion-icon name="logo-whatsapp" class="infor_icon" style="color: black;"></ion-icon>
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">+60123456789</div>
                         </div>
 
-                        <div class="infor_box">
-                            <img src="../../assets/contact_img/icons8-instagram-500.png"
-                                style="width: 25px; height: 25px; margin-right: 10px; " />
-                            <div>https://www.instagram.com/codebentomy/</div>
-                        </div>
-
-                        <div class="infor_box">
-                            <img src="../../assets/contact_img/icons8-whatsapp-500.png"
-                            style="width: 25px; height: 25px; margin-right: 10px; " />
-                            <div>0123456789</div>
-                        </div>   -->
 
                     </div>
 
-                    <div style="width: 18%; padding-left: 30px;">
-                        <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">Our Services
+                    <div style="width:3%;"></div>
+
+                    <div style="width: 16%;">
+                        <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">Our
+                            Services
                         </div>
                         <div class="infor_box" style="padding-bottom:10px;">
-                            
+
                             <div style="color: rgb(153, 153, 153) ; font-size: 14px;">IT Consulting</div>
                         </div>
                         <div class="infor_box" style="padding-bottom:10px;">
-                            
+
                             <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Website Development</div>
                         </div>
                         <div class="infor_box" style="padding-bottom:10px;">
-                           
+
                             <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Mobile App Development</div>
                         </div>
-                        <div class="infor_box"style="padding-bottom:10px;">
-                            
+                        <div class="infor_box" style="padding-bottom:10px;">
+
                             <div style="color: rgb(153, 153, 153) ; font-size: 14px;">UX/UI Design</div>
                         </div>
                     </div>
 
-                    <div style="width: 10%; padding-left: 30px;">
+                    <div style="width:3%;"></div>   
+
+                    <div style="width: 11%;">
                         <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">Menu
                         </div>
                         <div class="infor_box" style="padding-bottom:10px;">
-                            
+
                             <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Home</div>
                         </div>
                         <div class="infor_box" style="padding-bottom:10px;">
@@ -199,23 +212,29 @@
                             <!-- <ion-icon name="caret-forward-outline"></ion-icon> -->
                             <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Services</div>
                         </div>
-                        <div class="infor_box"style="padding-bottom:10px;">
-                            <!-- <ion-icon name="caret-forward-outline"></ion-icon> -->
+                        <!-- <div class="infor_box" style="padding-bottom:10px;">
+                            <ion-icon name="caret-forward-outline"></ion-icon>
                             <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Team</div>
-                        </div>
-                        <div class="infor_box"style="padding-bottom:10px;">
+                        </div> -->
+                        <div class="infor_box" style="padding-bottom:10px;">
                             <!-- <ion-icon name="caret-forward-outline"></ion-icon> -->
                             <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Work</div>
                         </div>
-                        <div class="infor_box"style="padding-bottom:10px;">
+                        <div class="infor_box" style="padding-bottom:10px;">
                             <!-- <ion-icon name="caret-forward-outline"></ion-icon> -->
                             <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Contact</div>
                         </div>
                     </div>
 
-                    <div style="width: 20%; display: flex; justify-content: flex-end;">
+                    <div style="width:13%;"></div>
+
+
+                    <!-- <div style="width: 13%; display: flex; justify-content: flex-end;">
                         <img src="../../assets/gif/people_outline.gif"
-                            style="width: 250px ; height: 250px; border-radius: 15px; object-fit: cover;" />
+                            style="width: 225px ; height: 225px; border-radius: 15px; object-fit: cover;" />
+                    </div> -->
+
+                   
                     </div>
                 </div>
 
@@ -229,67 +248,172 @@
 
         <!-- navigationbar -->
 
-        <div [ngStyle]="{'width': widther() < 960 ? '100%' : '95%' , 'height': widther() < 1080 ? '100vh' : '100%' , 'padding': widther() < 960 ? '60px 20px' : '60px 100px', display:  navstatus == true ? 'block' : 'none'   }"
+        <div [ngStyle]="{'width': widther() < 960 ? '100%' : '95%' , 'height': widther() < 1080 ? '100vh' : '100%' , 'padding': widther() < 960 ? '60px 20px' : '60px 50px 60px 150px', 
+            display:  navstatus == true ? 'block' : 'none'   }"
             style="background-color: black ; transition: all 0.5s ease-in-out; color: white;">
+            <div style="display: flex; flex-direction:column;">
+                <div style="display:flex; justify-content:space-between; align-items: center; ">
+                    <div style="width: 40%;">
 
-            <div style="position: relative; display: flex; justify-content: flex-start;">
-                <div (mouseover)="contacthomestatus = true" (mouseout)="contacthomestatus = false" class="nav"
-                    id="contactnav" style="padding: 0px 20px;" (click)="selecttab('home')"
-                    [ngClass]="tab == 'contact' ? 'highlight' : 'highlightx'"
-                    [ngStyle]="{'font-size': widther() < 960 ? '60px' : '80px'}">Home</div>
-                <div (mouseover)="contacthomestatus = true" (mouseout)="contacthomestatus = false"
-                    [ngClass]="contacthomestatus == true ? 'underlinedcontacthome' : 'underlined'"
-                    style="position: absolute; bottom: 15px;"> </div>
-            </div>
+                        <div class="navtitle1" style="position: relative; display: flex; justify-content: flex-start;">
+                            <div (mouseover)="contacthomestatus = true" (mouseout)="contacthomestatus = false"
+                                class="nav" id="contactnav" style="padding: 0px; margin-left: 20px;"
+                                (click)="selecttab('home')"
+                                [ngClass]="contacthomestatus == true ? 'navtitle0' : 'title0'"
+                                [ngStyle]="{'font-size': widther() < 960 ? '60px' : '65px'}">Home</div>
+                            <div (mouseover)="contacthomestatus = true" (mouseout)="contacthomestatus = false"
+                                [ngClass]="contacthomestatus == true ? 'underlinedcontacthome' : 'underlined'"
+                                style="position: absolute; bottom: 15px;"> </div>
+                        </div>
 
-            <div style="position: relative; display: flex; justify-content: flex-start;">
-                <div (mouseover)="contactservicesstatus = true" (mouseout)="contactservicesstatus = false" class="nav"
-                    id="contactnav" style="padding: 0px 20px;" (click)="selecttab('services')"
-                    [ngClass]="tab == 'contact' ? 'highlight' : 'highlightx'"
-                    [ngStyle]="{'font-size': widther() < 960 ? '60px' : '80px'}">Services</div>
-                <div (mouseover)="contactservicesstatus = true" (mouseout)="contactservicesstatus = false"
-                    [ngClass]="contactservicesstatus == true ? 'underlinedcontactservices' : 'underlined'"
-                    style="position: absolute; bottom: 15px;"> </div>
-            </div>
+                        <div class="navtitle2" style="position: relative; display: flex; justify-content: flex-start;">
+                            <div (mouseover)="contactservicesstatus = true" (mouseout)="contactservicesstatus = false"
+                                class="nav" id="contactnav" style="padding: 0px; margin-left: 20px;"
+                                (click)="selecttab('services')"
+                                [ngClass]="contactservicesstatus == true ? 'navtitle0' : 'title0'"
+                                [ngStyle]="{'font-size': widther() < 960 ? '60px' : '65px'}">Services</div>
+                            <div (mouseover)="contactservicesstatus = true" (mouseout)="contactservicesstatus = false"
+                                [ngClass]="contactservicesstatus == true ? 'underlinedcontactservices' : 'underlined'"
+                                style="position: absolute; bottom: 15px;"> </div>
+                        </div>
 
-            <div style="position: relative; display: flex; justify-content: flex-start;">
-                <div (mouseover)="contactaboutstatus = true" (mouseout)="contactaboutstatus = false" class="nav"
-                    id="contactnav" style="padding: 0px 20px;" (click)="selecttab('about')"
-                    [ngClass]="tab == 'contact' ? 'highlight' : 'highlightx'"
-                    [ngStyle]="{'font-size': widther() < 960 ? '60px' : '80px'}">About</div>
-                <div (mouseover)="contactaboutstatus = true" (mouseout)="contactaboutstatus = false"
-                    [ngClass]="contactaboutstatus == true ? 'underlinedcontactabout' : 'underlined'"
-                    style="position: absolute;bottom: 15px;"> </div>
-            </div>
+                        <div class="navtitle3" style="position: relative; display: flex; justify-content: flex-start;">
+                            <div (mouseover)="contactaboutstatus = true" (mouseout)="contactaboutstatus = false"
+                                class="nav" id="contactnav" style="padding: 0px; margin-left: 20px;"
+                                (click)="selecttab('about')"
+                                [ngClass]="contactaboutstatus == true ? 'navtitle0' : 'title0'"
+                                [ngStyle]="{'font-size': widther() < 960 ? '60px' : '65px'}">About</div>
+                            <div (mouseover)="contactaboutstatus = true" (mouseout)="contactaboutstatus = false"
+                                [ngClass]="contactaboutstatus == true ? 'underlinedcontactabout' : 'underlined'"
+                                style="position: absolute;bottom: 15px;"> </div>
+                        </div>
 
-            <div style="position: relative; display: flex; justify-content: flex-start;">
-                <div (mouseover)="contactteamstatus = true" (mouseout)="contactteamstatus = false" class="nav"
-                    id="contactnav" style="padding: 0px 20px;" (click)="selecttab('contact')"
-                    [ngClass]="tab == 'team' ? 'highlight' : 'highlightx'"
-                    [ngStyle]="{'font-size': widther() < 960 ? '60px' : '80px'}">Team</div>
-                <div (mouseover)="contactteamstatus = true" (mouseout)="contactteamstatus = false"
-                    [ngClass]="contactteamstatus == true ? 'underlinedcontactteam' : 'underlined'"
-                    style="position: absolute; bottom: 15px;"> </div>
-            </div>
+                        <!-- <div class="navtitle4" style="position: relative; display: flex; justify-content: flex-start;">
+                            <div (mouseover)="contactteamstatus = true" (mouseout)="contactteamstatus = false"
+                                class="nav" id="contactnav" style="padding: 0px; margin-left: 20px;"
+                                (click)="selecttab('contact')"
+                                [ngClass]="contactteamstatus == true ? 'navtitle0' : 'title0'"
+                                [ngStyle]="{'font-size': widther() < 960 ? '60px' : '65px'}">Team</div>
+                            <div (mouseover)="contactteamstatus = true" (mouseout)="contactteamstatus = false"
+                                [ngClass]="contactteamstatus == true ? 'underlinedcontactteam' : 'underlined'"
+                                style="position: absolute; bottom: 15px;"> </div>
+                        </div> -->
 
-            <div style="position: relative; display: flex; justify-content: flex-start;">
-                <div (mouseover)="contactworkstatus = true" (mouseout)="contactworkstatus = false" class="nav"
-                    id="contactnav" style="padding: 0px 20px;" (click)="selecttab('contact')"
-                    [ngClass]="tab == 'work' ? 'highlight' : 'highlightx'"
-                    [ngStyle]="{'font-size': widther() < 960 ? '60px' : '80px'}">Work</div>
-                <div (mouseover)="contactworkstatus = true" (mouseout)="contactworkstatus = false"
-                    [ngClass]="contactworkstatus == true ? 'underlinedcontactwork' : 'underlined'"
-                    style="position: absolute; bottom: 15px;"> </div>
-            </div>
+                        <div class="navtitle5" style="position: relative; display: flex; justify-content: flex-start;">
+                            <div (mouseover)="contactworkstatus = true" (mouseout)="contactworkstatus = false"
+                                class="nav" id="contactnav" style="padding: 0px; margin-left: 20px;"
+                                (click)="selecttab('contact')"
+                                [ngClass]="contactworkstatus == true ? 'navtitle0' : 'title0'"
+                                [ngStyle]="{'font-size': widther() < 960 ? '60px' : '65px'}">Work</div>
+                            <div (mouseover)="contactworkstatus = true" (mouseout)="contactworkstatus = false"
+                                [ngClass]="contactworkstatus == true ? 'underlinedcontactwork' : 'underlined'"
+                                style="position: absolute; bottom: 15px;"> </div>
+                        </div>
 
-            <div style="position: relative; display: flex; justify-content: flex-start;">
-                <div (mouseover)="contactcontactstatus = true" (mouseout)="contactcontactstatus = false" class="nav"
-                    id="contactnav" style="padding: 0px 20px;" (click)="selecttab('contact')"
-                    [ngClass]="tab == 'contact' ? 'highlight' : 'highlightx'"
-                    [ngStyle]="{'font-size': widther() < 960 ? '60px' : '80px'}">Contact</div>
-                <div (mouseover)="contactcontactstatus = true" (mouseout)="contactcontactstatus = false"
-                    [ngClass]="contactcontactstatus == true ? 'underlinedcontactcontact' : 'underlined'"
-                    style="position: absolute; bottom: 15px;"> </div>
+                        <div class="navtitle6" style="position: relative; display: flex; justify-content: flex-start;">
+                            <div (mouseover)="contactcontactstatus = true" (mouseout)="contactcontactstatus = false"
+                                class="nav" id="contactnav" style="padding: 0px; margin-left: 20px;"
+                                (click)="selecttab('contact')"
+                                [ngClass]="contactcontactstatus == true ? 'navtitle0' : 'title0'"
+                                [ngStyle]="{'font-size': widther() < 960 ? '60px' : '65px'}">Contact</div>
+                            <div (mouseover)="contactcontactstatus = true" (mouseout)="contactcontactstatus = false"
+                                [ngClass]="contactcontactstatus == true ? 'underlinedcontactcontact' : 'underlined'"
+                                style="position: absolute; bottom: 15px;"> </div>
+                        </div>
+
+                    </div>
+
+                    <div style="color: white; width: 35%;">
+
+                        <div class="infor">
+
+
+                            <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">
+                                CodeBento Sdn Bhd
+                            </div>
+
+
+                            <div class="infor_box" style="padding-bottom:5px;">
+
+                                <img src="../../assets/contact_img/address_0804.png"
+                                    style="width: 26px; height: 26px; margin-right: 10px; " />
+                                <div style="color: rgb(153, 153, 153) ; font-size: 14px;">F-3A-16, IOI Boulevard, Jalan
+                                    Kenari 5, Bandar Puchong Jaya, 47100 Puchong, Selangor
+                                    Malaysia.</div>
+                            </div>
+
+                            <div class="infor_box" style="padding-bottom:5px;">
+                                <ion-icon name="mail-outline" class="infor_icon" style="color: white;"></ion-icon>
+                                <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Emai@gmail.com</div>
+                            </div>
+
+                            <div class="infor_box" style="padding-bottom:5px;">
+                                <ion-icon name="phone-portrait-outline" class="infor_icon" style="color: white;">
+                                </ion-icon>
+                                <div style="color: rgb(153, 153, 153) ; font-size: 14px;">0123456789</div>
+                            </div>
+
+                            <!-- <div class="infor_box" style="padding-bottom:5px;">
+                        <img src="../../assets/contact_img/facebook-outline2.svg" class="infor_icon" style="width: 36px; height:36px"/>
+                        <div style="color: rgb(153, 153, 153) ; font-size: 14px;">https://www.facebook.com/codebento/</div>
+                    </div>
+
+                    <div class="infor_box" style="padding-bottom:5px;">
+                        <ion-icon name="logo-instagram" class="infor_icon" style="color: white;"></ion-icon>
+                        <div style="color: rgb(153, 153, 153) ; font-size: 14px;">https://www.instagram.com/codebentomy/</div>
+                    </div>
+
+                    <div class="infor_box" style="padding-bottom:5px;">
+                        <ion-icon name="logo-whatsapp" class="infor_icon" style="color: white;"></ion-icon>
+                        <div style="color: rgb(153, 153, 153) ; font-size: 14px;">0123456789</div>
+                    </div> -->
+
+                        </div>
+
+                    </div>
+
+
+                    <div style="width: 25%;">
+                        <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">Our
+                            Services
+                        </div>
+                        <div class="infor_box" style="padding-bottom:10px;">
+
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">IT Consulting</div>
+                        </div>
+                        <div class="infor_box" style="padding-bottom:10px;">
+
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Website Development</div>
+                        </div>
+                        <div class="infor_box" style="padding-bottom:10px;">
+
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Mobile App Development</div>
+                        </div>
+                        <div class="infor_box" style="padding-bottom:10px;">
+
+                            <div style="color: rgb(153, 153, 153) ; font-size: 14px;">UX/UI Design</div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div style="display:flex; justify-content: space-between; margin: 100px 0px 0px 0px">
+                    <div>
+                        <div>2022 Copyright © CodeBento Sdn Bhd. All Rights Reserved.</div>
+                    </div>
+
+                    <div style="display: flex; ">
+
+                        <ion-icon name="logo-facebook" class="infor_icon" style="color: white;"></ion-icon>
+
+                        <ion-icon name="logo-instagram" class="infor_icon" style="color: white;"></ion-icon>
+
+                        <ion-icon name="logo-whatsapp" class="infor_icon" style="color: white;"></ion-icon>
+
+
+                    </div>
+                  
+                </div>
             </div>
         </div>
 

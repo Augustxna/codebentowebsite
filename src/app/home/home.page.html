@@ -27,8 +27,8 @@
           <div class="nav" style=" padding: 0px 20px;" (click)="selecttab('services')"
             [ngClass]="tab == 'services' ? 'highlight' : 'highlightx'">Services</div>
 
-          <div class="nav" style=" padding: 0px 20px;" (click)="selecttab('team')"
-            [ngClass]="tab == 'team' ? 'highlight' : 'highlightx'">Team</div>
+          <!-- <div class="nav" style=" padding: 0px 20px;" (click)="selecttab('team')"
+            [ngClass]="tab == 'team' ? 'highlight' : 'highlightx'">Team</div> -->
 
           <div class="nav" style=" padding: 0px 20px;" (click)="selecttab('work')"
             [ngClass]="tab == 'work' ? 'highlight' : 'highlightx'">Testimonials</div>
@@ -45,100 +45,71 @@
 
 
       <div [ngClass]="tab == 'home' ? 'home' : 'blank' " id="home" class="home"
-        style="display: flex; flex-direction:column; height: 185vh; padding-bottom: 50px;" (mouseover)="tab = 'home'">
+        style="display: flex; flex-direction:column; height: 160vh; padding-bottom: 50px;" (mouseover)="tab = 'home'">
         <div class="container"
           [ngStyle]="{'flex-direction': widther() < 960 ? 'column' : 'row' , 'width' : widther() < 960 ? '100%' : '50$'}"
-          style="display: flex; justify-content:space-evenly; align-items:center; padding:60px 20px 0px 20px;">
-          <div style=" font-size: 30px; color: black; padding: 30px 40px 0px 40px; ">
-            <h1 [ngClass]="hometab == 'up' ? 'homeh1' : 'homeh1' " style="font-weight: bold;">Appify your ideas</h1>
-            <p [ngClass]="hometab == 'up' ? 'homep' : 'homep' " style="color: #AAAAAA;">Turn your ideas into mobile apps
+          style="display: flex; justify-content:space-evenly; align-items:center; padding:60px 30px 0px 40px;">
+          <div style=" font-size: 20px; color: black; padding: 30px 40px 0px 40px; ">
+            <h1 [ngClass]="reach == 1 ? 'homeh1' : 'homeh2' " style="font-weight: bold;">MOBILE APP MASTER BUILDERS</h1>
+            <p [ngClass]="reach == 1 ? 'homepa' : 'homep2' " style="color: #AAAAAA;">Appify your ideas.</p>
+            <p [ngClass]="reach == 1 ? 'homepb' : 'homep2' " style="color: #AAAAAA;"> Turn your ideas into mobile apps
             </p>
-            <button [ngClass]="hometab == 'up' ? 'homebtn' : 'homebtn' ">Let's get started</button>
+            <p [ngClass]="reach == 1 ? 'homepc' : 'homep2' " style="color: #AAAAAA;">Need to make an app? Need it to work and look good? We can handle it for you</p>
+            <button [ngClass]="reach == 1 ? 'homebtn' : 'homebtn2' ">Let's get started</button>
           </div>
 
 
           <div>
-            <img src="../../assets/icon/home_img.png" class="homeimage">
+            <img src="../../assets/icon/home_img.png" [ngClass]="reach == 1 ? 'homeimage' : 'homeimage2' ">
           </div>
 
         </div>
 
         <div [ngStyle]="{'padding' : widther() < 960 ? '10px' : '0px 100px'}" style="width: 100%;">
-          <h2 style="font-size: 40px ; text-align: center; padding-bottom: 30px; font-weight: bold;">OUR PARTNERS</h2>
+          <!-- <h2 style="font-size: 40px ; text-align: center; padding-bottom: 30px; font-weight: bold;" 
+          [ngClass]="reach == 1.5 || reach == 1.7? 'titleanimation' : 'titlex' ">OUR PARTNERS</h2> -->
+          <h2 style="font-size: 40px ; text-align: center; padding-bottom: 30px; font-weight: bold;" 
+         >OUR PARTNERS</h2>
           <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
-            style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
+            style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;" >
 
             <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
+            [ngClass]="reach == 1.5 || reach == 1.7 ? 'icon' : 'icon2' " />
             <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
+            [ngClass]="reach == 1.5 || reach == 1.7 ? 'icon' : 'icon2' " />
             <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
+            [ngClass]="reach == 1.5 || reach == 1.7 ? 'icon' : 'icon2' " />
             <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
+            [ngClass]="reach == 1.5 || reach == 1.7 ? 'icon' : 'icon2' " />
+
 
 
           </div>
 
           <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
-            style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
+            style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;" 
+           >
 
             <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
+            [ngClass]="reach == 1.5 || reach == 1.7 ? 'icon' : 'icon2' "/>
             <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
+            [ngClass]="reach == 1.5 || reach == 1.7 ? 'icon' : 'icon2' " />
             <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
+            [ngClass]="reach == 1.5 || reach == 1.7 ? 'icon' : 'icon2' "/>
             <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
+            [ngClass]="reach == 1.5 || reach == 1.7 ? 'icon' : 'icon2' " />
 
-
-          </div>
-
-          <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
-            style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
-
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
 
 
           </div>
 
-          <div [ngStyle]="{'padding' : widther() < 960 ? '0px' : '50px 0px 30px 0px'}"
-            style="width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;">
-
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-            <img src="../../assets/icon/testicon1.png" style="object-fit: cover; width: 150px ; height:70px;"
-              class="icon" />
-
-
-          </div>
         </div>
 
 
       </div>
 
     </div>
-    <!-- <div class="horizontalline"></div> -->
+
 
     <div [ngClass]="tab == 'about' ? 'about' : 'blank' " id="about" class="about container"
       style="display: flex; flex-direction: column; padding: 100px 0px 60px 0px; height: 150vh; position: relative;">
@@ -146,15 +117,18 @@
       <div [ngStyle]="{'flex-direction': widther() < 960 ? 'column' : 'row'}"
         style="display: flex; justify-content: space-around; align-items: center; color: black; padding: 10px 20px 140px 20px;">
         <div style="width: 50%; text-align: center;">
-          <h2 style="font-size: 40px; font-weight: bold;">What is Code Bento & What we do</h2>
+          <!-- <h2 style="font-size: 40px; font-weight: bold;" 
+          [ngClass]="reach == 1.7 || reach == 2 || reach == 2.5 ? 'titleanimation' : 'titlex' ">What is Code Bento & What we do</h2> -->
+          <h2 style="font-size: 40px; font-weight: bold;" >What is Code Bento & What we do</h2>
         </div>
         <div *ngIf="widther() < 960"
           style="border: 1px solid black; width: 100%; background-color: black; margin: 10px 0px;"></div>
         <div *ngIf="widther() > 960"
           style="border: 1px solid black; height:200px;width: 0; background-color: black;  margin: 0px 10px;"></div>
         <div [ngStyle]="{'width': widther() < 960 ? '100%' : '50%'}" style=" text-align: center; padding: 10px 0px;">
+          <!-- <h2 style="font-size: 40px; font-weight: bold;" [ngClass]="reach == 1.7 || reach == 2 || reach == 2.5 ? 'titleanimation' : 'titlex' ">- MEET THE TEAM -</h2> -->
           <h2 style="font-size: 40px; font-weight: bold;">- MEET THE TEAM -</h2>
-          <p style="font-size: 20px; color: #737373; padding: 10px 20px;">With years of experience servicing government
+          <p style="font-size: 18px; color: #737373; padding: 10px 20px;">With years of experience servicing government
             and private clients,
             across a multitude of industries including entertainment,
             retail, sports, and real estate. With our locally grown team of 10,
@@ -257,8 +231,9 @@
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
         <div [ngStyle]="{'width': widther() < 960 ? '100%' : '50%'}"
           style="text-align: center; padding: 60px 0px 120px 0px;">
-          <h1 style="font-size:40px ; font-weight: bold;">- WHY US ? -</h1>
-          <p style="color: rgb(115, 115, 115); font-size:20px; padding:0px 30px">We set high standards for ourselves in
+          <!-- <h1 style="font-size:40px ; font-weight: bold; padding-bottom: 10px;" [ngClass]="reach == 2.7 || reach == 3 ? 'titleanimation' : 'titlex' ">- WHY US ? -</h1> -->
+          <h1 style="font-size:40px ; font-weight: bold; padding-bottom: 10px;" >- WHY US ? -</h1>
+          <p style="color: rgb(115, 115, 115); font-size:18px; padding:0px 30px">We set high standards for ourselves in
             terms of build quality and speed.
             Your project is in good hands as we pull out all the stops to making the best app possible within your
             budget
@@ -270,7 +245,8 @@
 
           <div [ngStyle]="{'width': widther() < 960 ? '100%' : '30%'}">
             <img src="../../assets/icon/service1.png" style="border-radius:50%; width: 250px; margin:10px;"
-              [ngClass]="navbartab == 'down' ? 'image' : 'image2' " />
+            [ngClass]="reach == 3 ? 'imagea' : 'image2'"  />
+            <!-- <h2 style="padding:10px" [ngClass]="reach == 3 ? 'titleanimation' : 'titlex' ">Mobile App Development</h2> -->
             <h2 style="padding:10px">Mobile App Development</h2>
             <p style="color: #aaaaaa;">Transforming your ideas into beautiful custom built mobile apps. We specialize in
               building efficient apps
@@ -279,7 +255,9 @@
 
           <div [ngStyle]="{'width': widther() < 960 ? '100%' : '30%'}">
             <img src="../../assets/icon/service2.png"
-              style="border-radius:50%;  width: 250px; margin:10px; height:250px;" class="image" />
+              style="border-radius:50%;  width: 250px; margin:10px; height:250px;" 
+              [ngClass]="reach == 3 ? 'imageb' : 'image2'" />
+            <!-- <h2 style="padding:10px" [ngClass]="reach == 3 ? 'titleanimation' : 'titlex' " >Dynamic & Stylish Design</h2> -->
             <h2 style="padding:10px">Dynamic & Stylish Design</h2>
             <p style="color: #aaaaaa;">A clean and simple UI/UX is the key to an aesthetic app. Watch as your app is
               given a modern and
@@ -288,7 +266,9 @@
 
           <div [ngStyle]="{'width': widther() < 960 ? '100%' : '30%'}">
             <img src="../../assets/icon/service3.png"
-              style="border-radius:50%;  width: 250px; margin:10px; height:250px;" class="image" />
+              style="border-radius:50%;  width: 250px; margin:10px; height:250px;"
+               [ngClass]="reach == 3 ? 'imagec' : 'image2'" />
+            <!-- <h2 style="padding:10px" [ngClass]="reach == 3 ? 'titleanimation' : 'titlex' ">Secure & Fast Platform</h2> -->
             <h2 style="padding:10px">Secure & Fast Platform</h2>
             <p style="color: #aaaaaa;">Experience near zero interruptions and lightning quick computations through the
               power of Cloud Servers
@@ -307,20 +287,263 @@
     <div [ngClass]="tab == 'work' ? 'work' : 'blank' " id="work" class="work container"
       style="padding: 40px 20px; height: 100vh;">
       <div style="padding-bottom: 40px; padding:60px 0px 120px 0px; display: flex; justify-content: center;">
+        <!-- <h2 style="font-size: 40px; font-weight: bold;" [ngClass]="reach == 4 ? 'titleanimation' : 'titlex' ">OUR CREATIONS</h2> -->
         <h2 style="font-size: 40px; font-weight: bold;">OUR CREATIONS</h2>
       </div>
 
       <div [ngStyle]="{'flex-direction': widther() < 960 ? 'column' : 'row'}" style="display:flex; text-align: center;">
-        <div [ngStyle]="{'width': widther() < 960 ? '100%' : '33%'}">
+        <div [ngStyle]="{'width': widther() < 960 ? '100%' : '33.3%'}">
           <img src="../../assets/icon/appscreen.png" style=" height: 500px; " />
         </div>
-        <div [ngStyle]="{'width': widther() < 960 ? '100%' : '33%'}">
+        <div [ngStyle]="{'width': widther() < 960 ? '100%' : '33.3%'}">
           <img src="../../assets/icon/appscreen.png" style=" height: 500px; " />
         </div>
-        <div [ngStyle]="{'width': widther() < 960 ? '100%' : '33%'}">
+        <div [ngStyle]="{'width': widther() < 960 ? '100%' : '33.3%'}">
           <img src="../../assets/icon/appscreen.png" style=" height: 500px; " />
         </div>
       </div>
     </div>
+
+
+
+    <div class="content" style="padding-top: 100px;">
+
+
+      <div class="title_container">
+          <h1 class="title">Get In Touch</h1>
+          <div class="subtitle">If you're searching for talented tech minds who are dedicated to their work, we
+              are a perfect fit.
+              We are a dynamic software development company based in Malaysia.</div>
+      </div>
+
+      <!-- <div *ngIf="widther() < 960" style="display: flex; justify-content:center;">
+          <img src="../../assets/icon/contact_image-removebg-preview.png" style="width:70%;" />
+      </div> -->
+
+      <!-- <div style="width: 100% ; height: 600px;" id="map"></div> -->
+
+      <div class="formnmap">
+
+          <!-- <img src="../../assets/icon/googlemap.png" class="map" /> -->
+
+          <div style="width: 100%; background-color:white; height: 2px;"> </div>
+
+          <div class="imagenform">
+
+              <div *ngIf="widther() > 960" style="display: flex; justify-content:center; width: 60%;">
+                  <div style="width: 100% ; height: 520px; border-radius: 15px;" id="map" 
+                  [ngClass]="reach == 5 ? 'map' : 'blankx'">
+                  </div>
+              </div>
+
+
+              <div style="display: flex; justify-content:center" class="outform">
+
+
+                  <div class="form">
+                      <div style="text-align: center; padding: 20px 0px;">
+
+                          <h2 style="padding: 5px 0px; font-size: 22px;">We would love to hear from you. </h2>
+                          <p style="font-size: 13px ;">Let us meet and you may judge for yourself if we are worth your time and money</p>
+                      </div>
+
+                      <div class="input">
+                          <ion-input [ngClass]="reach == 5 ? 'input-box' : 'blankx'" placeholder="Enter Your Name"></ion-input>
+                      </div>
+
+                      <div class="input">
+                          <ion-input [ngClass]="reach == 5 ? 'input-box2' : 'blankx'" placeholder="Enter Your Phone Number"></ion-input>
+                      </div>
+
+                      <div class="input">
+                          <ion-input [ngClass]="reach == 5 ? 'input-box3' : 'blankx'" placeholder="Enter Your Email Address"></ion-input>
+                      </div>
+
+                      <div class="input">
+                          <ion-input [ngClass]="reach == 5 ? 'input-box4' : 'blankx'" placeholder="Enter Your Subject"></ion-input>
+                      </div>
+
+                      <div>
+                          <textarea [ngClass]="reach == 5 ? 'textareabox' : 'blankx'" placeholder="Tell us a little about your idea"
+                              rows="5"></textarea>
+                      </div>
+
+
+                      <div class="submit_btn_box">
+                          <div [ngClass]="reach == 5 ? 'submit_btn' : 'blankx'">Get In Touch</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+      <div class="footer_container">
+
+
+
+          <div style="display: flex; flex-direction:column; justify-content: center; align-items: center; padding-bottom: 60px;">
+
+              <div class="logo_container" style="width: 100%; display: flex; align-items: center; padding-bottom: 60px;">
+                  <img src="../../assets/icon/codebentologo.png" class="logo">
+              </div>
+              
+              <div class="infor_container">
+
+              <div style="width: 13%;"></div>
+
+              <div class="infor" style="width: 25%;">
+
+
+                  <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">CodeBento
+                      Sdn Bhd
+                  </div>
+
+
+                  <div class="infor_box" style="padding-bottom:5px;">
+                      <!-- <ion-icon name="map-outline" class="infor_icon"></ion-icon> -->
+                      <img src="../../assets/contact_img/location-outline2.png"
+                          style="width: 26px; height: 26px; margin-right: 10px; " />
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">F-3A-16, IOI Boulevard, Jalan
+                          Kenari 5, Bandar Puchong Jaya, 47100 Puchong, Selangor
+                          Malaysia.</div>
+                  </div>
+
+                  <div class="infor_box" style="padding-bottom:5px;">
+                      <ion-icon name="mail-outline" class="infor_icon" style="color: black;"></ion-icon>
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Emai@gmail.com</div>
+                  </div>
+
+                  <div class="infor_box" style="padding-bottom:5px;">
+                      <ion-icon name="phone-portrait-outline" class="infor_icon" style="color: black;"></ion-icon>
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">+60123456789</div>
+                  </div>
+
+                  <div class="infor_box" style="padding-bottom:5px;">
+                      <ion-icon name="time-outline" class="infor_icon" style="color: black;"></ion-icon>
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Working hours: Mon - Fri  10:30 - 19:30h</div>
+                  </div>
+
+                  <!-- <div class="infor_box" style="padding-bottom:5px;">
+                      <img src="../../assets/contact_img/facebook-outline2.svg" class="infor_icon"
+                          style="width: 36px; height:36px" />
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">
+                          https://www.facebook.com/codebento/</div>
+                  </div>
+
+                  <div class="infor_box" style="padding-bottom:5px;">
+                      <ion-icon name="logo-instagram" class="infor_icon" style="color: black; font-size: 30px;"></ion-icon>
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px; word-break: break-all;">
+                          https://www.instagram.com/codebentomy/</div>
+                  </div>
+
+                  <div class="infor_box" style="padding-bottom:5px;">
+                      <ion-icon name="logo-whatsapp" class="infor_icon" style="color: black;"></ion-icon>
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">0123456789</div>
+                  </div> -->
+              </div>
+
+              <div style="width:5%;"></div>
+
+              <div class="infor" style="width: 30%;">
+              
+                  <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">Social Media
+                  </div>
+
+                  <div class="infor_box" style="padding-bottom:5px;">
+                      <img src="../../assets/contact_img/facebook-outline2.svg" class="infor_icon"
+                          style="width: 36px; height:36px" />
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">
+                          https://www.facebook.com/codebento/</div>
+                  </div>
+
+                  <div class="infor_box" style="padding-bottom:5px;">
+                      <ion-icon name="logo-instagram" class="infor_icon" style="color: black; "></ion-icon>
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px; word-break: break-all;">
+                          https://www.instagram.com/codebentomy/</div>
+                  </div>
+
+                  <div class="infor_box" style="padding-bottom:5px;">
+                      <ion-icon name="logo-whatsapp" class="infor_icon" style="color: black;"></ion-icon>
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">+60123456789</div>
+                  </div>
+
+
+              </div>
+
+              <div style="width:3%;"></div>
+
+              <div style="width: 16%;">
+                  <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">Our
+                      Services
+                  </div>
+                  <div class="infor_box" style="padding-bottom:10px;">
+
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">IT Consulting</div>
+                  </div>
+                  <div class="infor_box" style="padding-bottom:10px;">
+
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Website Development</div>
+                  </div>
+                  <div class="infor_box" style="padding-bottom:10px;">
+
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Mobile App Development</div>
+                  </div>
+                  <div class="infor_box" style="padding-bottom:10px;">
+
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">UX/UI Design</div>
+                  </div>
+              </div>
+
+              <div style="width:3%;"></div>   
+
+              <div style="width: 11%;">
+                  <div style="font-size: 16px; display: flex; padding-top: 10px; padding-bottom: 15px;">Menu
+                  </div>
+                  <div class="infor_box" style="padding-bottom:10px;">
+
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Home</div>
+                  </div>
+                  <div class="infor_box" style="padding-bottom:10px;">
+                      <!-- <ion-icon name="caret-forward-outline"></ion-icon> -->
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;"> About US</div>
+                  </div>
+                  <div class="infor_box" style="padding-bottom:10px;">
+                      <!-- <ion-icon name="caret-forward-outline"></ion-icon> -->
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Services</div>
+                  </div>
+                  <!-- <div class="infor_box" style="padding-bottom:10px;">
+                      <ion-icon name="caret-forward-outline"></ion-icon>
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Team</div>
+                  </div> -->
+                  <div class="infor_box" style="padding-bottom:10px;">
+                      <!-- <ion-icon name="caret-forward-outline"></ion-icon> -->
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Work</div>
+                  </div>
+                  <div class="infor_box" style="padding-bottom:10px;">
+                      <!-- <ion-icon name="caret-forward-outline"></ion-icon> -->
+                      <div style="color: rgb(153, 153, 153) ; font-size: 14px;">Contact</div>
+                  </div>
+              </div>
+
+              <div style="width:13%;"></div>
+
+
+              <!-- <div style="width: 13%; display: flex; justify-content: flex-end;">
+                  <img src="../../assets/gif/people_outline.gif"
+                      style="width: 225px ; height: 225px; border-radius: 15px; object-fit: cover;" />
+              </div> -->
+
+             
+              </div>
+          </div>
+
+
+          <div class="copyright_box">
+              <div>2022 Copyright © CodeBento Sdn Bhd. All Rights Reserved.</div>
+          </div>
+
+      </div>
+  </div>
   </div>
 </ion-content>
